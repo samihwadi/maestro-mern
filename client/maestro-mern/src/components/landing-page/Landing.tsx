@@ -1,19 +1,21 @@
-import { useState } from 'react';
 import './Landing.scss'
+import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
-  const [isHover, setIsHover] = useState(false);
-
+    const navigate = useNavigate();
+    const handleSubmit = () => {
+        navigate('/book-lesson')
+    }
   return (
     <div className='landing-container'>
-        <h1>ELEVATED LEARNING THROUGH MAESTRO</h1>
-        <h3>In-home | Online Tutoring</h3>
-        <p>Smart learning, made easy! Affordable rates, flexible schedules, and tutors who truly care—we keep learning stress-free and effective. Let's grow together!</p>
-        <img
-            src={isHover ? '/icons/biology-icon-hover.svg' : '/icons/biology-icon-1.svg'}
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-        />
+        <img className='image-one' src="landing-hero-1.png" alt="Greek Statue Image" />
+        <img className='image-two' src="landing-hero-2.png" alt="Greek Statue Image" />
+        <div className="hero-text-wrapper">
+            <h1>ELEVATED LEARNING THROUGH MAESTRO</h1>
+            <h3>In-home  |  Online Tutoring</h3>
+            <p className='text-intro'>Smart learning, made easy! Affordable rates, flexible schedules, and tutors who truly care—we keep learning stress-free and effective. Let's grow together!</p>
+            <button onClick={handleSubmit}>Book an appointment </button>
+        </div>
     </div>
   )
 }

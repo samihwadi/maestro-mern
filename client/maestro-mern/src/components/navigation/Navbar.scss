@@ -1,0 +1,68 @@
+@import '../../App';
+@import '../../Animations';
+
+.nav-container{
+    display: flex;
+    border-bottom: solid 0.5px#5F4824;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    padding: 10px;
+    img{
+        width: 110px;
+        height: auto;
+    }
+    animation: fadeInText 0.8s forwards;
+
+    .navlinks-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        a {
+            position: relative; 
+            @include paragraphText;
+            font-size: 14px;
+            text-decoration: none;
+            transition: color 0.15s ease-in-out;
+            padding: 0 10px;
+        
+            &:hover, &.active {
+                color: $bgHoverLight;
+                cursor: pointer;
+            }
+      
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+                background-color: $bgHoverLight;
+                visibility: hidden;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: all 0.15s ease-in-out;
+            }
+      
+            &:hover::before,
+            &.active::before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+        }
+        button {
+            align-self: flex-start;
+            background-color: transparent;
+            font-size: 14px;
+            padding: 14px 10px;
+            border-radius: 30px;
+            border: solid #B78756;
+            &:hover {
+                color: $bgColorLight;
+                background-color: #B78756;
+                cursor: pointer;
+            }
+        }
+    }      
+}

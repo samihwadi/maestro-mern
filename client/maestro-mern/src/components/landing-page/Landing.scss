@@ -1,27 +1,58 @@
 @import '../../App';
 
 .landing-container{
+    height: 100vh;
+    padding: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     h1 {
-        color: $bgHoverLight;
-        font-family: 'Classical Premiera';
+        @include headerText;
         font-size: 75px;
-        letter-spacing: 5%;
+        letter-spacing: 5px;
         text-align: center;
     }
     h3 {
-        color: $textColorDark;
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 600;
-        font-style: normal;
+        @include paragraphBold;
         font-size: 20px;
+        margin: 15px 0 25px;
     }
-    p{
-        color: $textColorDark;
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    .text-intro{
+        justify-self: center;
+        @include paragraphText;
+        font-size: 18px;
+        width: 600px;
+        line-height: 30px;
     }
-    img:hover {
-        cursor: pointer;
+    img {
+        width: 400px;
+    }
+    .image-one {
+        align-self: flex-start;
+    }
+    .image-two {
+        align-self: flex-end;
+    }
+    .hero-text-wrapper{
+        width: 1000px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: center;
+        button {
+            margin-top: 50px;
+            width: 50%;
+            background-color: transparent;
+            font-size: 18px;
+            padding: 14px 10px;
+            border-radius: 30px;
+            border: solid $textColorDark;
+            &:hover {
+                color: $bgColorLight;
+                background-color: $textColorDark;
+                cursor: pointer;
+            }
+        }
     }
 }

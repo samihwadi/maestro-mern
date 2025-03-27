@@ -1,5 +1,7 @@
 import './App.scss'
 import Landing from './components/landing-page/Landing'
+import Navbar from './components/navigation/Navbar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
 const App = () => {
@@ -7,7 +9,12 @@ const App = () => {
 
   return (
     <div className='App'>
-        <Landing />
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Landing />}></Route>
+          </Routes>
+        </Router>
     </div>
   )
 }
