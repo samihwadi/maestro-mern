@@ -44,10 +44,9 @@ const Navbar = () => {
       <NavLink to="/"><img src={logo} alt="Maestro Logo" /></NavLink>
       <div className="navlinks-wrapper">
         <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>Services</NavLink>
-        <NavLink to="/subjects" className={({ isActive }) => (isActive ? 'active' : '')}>Subjects</NavLink>
         <div className="dropdown-menu" ref={dropdownRef}>
           <span className={`dropdown-title ${showDropdown ? 'active' : ''}`} onClick={toggleDropdown}>
-            Pricing <img className="dropdown-arrow" src={showDropdown == true ? "/arrow-up.png" : "arrow-down.png"} alt="Arrow" />
+            Subjects <img className="dropdown-arrow" src={showDropdown == true ? "/arrow-up.png" : "arrow-down.png"} alt="Arrow" />
           </span>
           
           {showDropdown && (
@@ -67,7 +66,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-
+        <NavLink to="/pricing" className={({ isActive }) => (isActive ? 'active' : '')}>Pricing</NavLink>
         <NavLink to="/tutors" className={({ isActive }) => (isActive ? 'active' : '')}>Our Tutors</NavLink>
         <NavLink to="/careers" className={({ isActive }) => (isActive ? 'active' : '')}>Careers</NavLink>
         <NavLink to="/about-us" className={({ isActive }) => (isActive ? 'active' : '')}>About Us</NavLink>
