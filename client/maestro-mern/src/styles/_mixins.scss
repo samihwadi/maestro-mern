@@ -24,3 +24,19 @@
   color: c.$bgHoverLight;
   font-family: 'Classical Premiera';
 }
+
+@mixin styleButton($bColor, $color) {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 14px 10px;
+  border-radius: 30px;
+  border: solid $bColor;
+
+  &:hover {
+    color: $color;
+    background-color: $bColor;
+    cursor: pointer;
+  }
+}
+

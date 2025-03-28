@@ -48,17 +48,12 @@
         position: absolute;
         text-align: center;
         button {
+            font-size: 18px;
             margin-top: 50px;
             width: 50%;
-            background-color: transparent;
-            font-size: 18px;
-            padding: 14px 10px;
-            border-radius: 30px;
-            border: solid styles.$textColorDark;
-            &:hover {
-                color: styles.$bgColorLight;
-                background-color: styles.$textColorDark;
-                cursor: pointer;
+            @include styles.styleButton(styles.$textColorDark, styles.$bgColorLight);
+            img {
+                width: 20px;
             }
         }
     }

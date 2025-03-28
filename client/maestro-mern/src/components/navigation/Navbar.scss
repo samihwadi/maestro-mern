@@ -35,17 +35,7 @@
             }
         }
         button {
-            align-self: flex-start;
-            background-color: transparent;
-            font-size: 14px;
-            padding: 14px 10px;
-            border-radius: 30px;
-            border: solid #B78756;
-            &:hover {
-                color: styles.$bgColorLight;
-                background-color: #B78756;
-                cursor: pointer;
-            }
+            @include styles.styleButton(styles.$bgHoverLight, styles.$bgColorLight)
         }
         .dropdown-menu {
             position: relative;

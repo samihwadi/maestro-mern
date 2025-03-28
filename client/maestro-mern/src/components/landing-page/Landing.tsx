@@ -1,3 +1,4 @@
+import PricingRunner from '../pricing/PricingRunner';
 import PromoRunner from '../runner/PromoRunner';
 import InfiniteScroll from '../scroller/InfiniteScroll';
 import SubjectBtn from '../subject/SubjectBtn';
@@ -18,12 +19,13 @@ const Landing = () => {
             <h1>ELEVATED LEARNING THROUGH MAESTRO</h1>
             <h3>In-home  |  Online Tutoring</h3>
             <p className='text-intro'>Smart learning, made easy! Affordable rates, flexible schedules, and tutors who truly care—we keep learning stress-free and effective. Let's grow together!</p>
-            <button onClick={handleSubmit}>Book an appointment </button>
+            <button onClick={handleSubmit}>Book an appointment</button>
         </div>
       </div>
       <PromoRunner />
       <SubjectBtn />
       <InfiniteScroll />
+      <PricingRunner />
     </div>
   )
 }
