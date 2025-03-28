@@ -1,3 +1,5 @@
+import PromoRunner from '../runner/PromoRunner';
+import SubjectBtn from '../subject/SubjectBtn';
 import './Landing.scss'
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +10,7 @@ const Landing = () => {
     }
   return (
     <div className='landing-container'>
+      <div className="hero-wrapper">
         <img className='image-one' src="landing-hero-1.png" alt="Greek Statue Image" />
         <img className='image-two' src="landing-hero-2.png" alt="Greek Statue Image" />
         <div className="hero-text-wrapper">
@@ -16,6 +19,9 @@ const Landing = () => {
             <p className='text-intro'>Smart learning, made easy! Affordable rates, flexible schedules, and tutors who truly care—we keep learning stress-free and effective. Let's grow together!</p>
             <button onClick={handleSubmit}>Book an appointment </button>
         </div>
+      </div>
+      <PromoRunner />
+      <SubjectBtn />
     </div>
   )
 }

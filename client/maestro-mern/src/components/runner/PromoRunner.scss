@@ -1,0 +1,24 @@
+@use '../../styles/' as styles; 
+
+.runner-container{
+    background-color: styles.$bgCream;
+    padding-top: 5px;
+    .runner-design{
+        background-image: url('/runner-design-1.png');
+        background-size: cover;         
+        background-position: center;    
+        background-repeat: no-repeat;   
+        width: 100%;
+        height: 40px;
+    }
+    
+    .promo {
+        padding: 50px;
+        background-color: styles.$bgCream;
+        p {
+            @include styles.paragraphBold;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}

@@ -1,42 +1,10 @@
-@import './fonts/fonts';
-// Primary Colors
-$bgColorLight: #EBEAE5;
-$bgHoverLight: #B78756;
-$textColorDark: #39312F;
-
-// Secondary Colors
-$bgBlue: #4D699C;
-$textColorLight: #514C4B;
-$bgCream: #DFD7C4;
-$bgColorDark: #171717;
-
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin paragraphText {
-    color: $textColorDark;
-    font-family: 'Satoshi', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@mixin paragraphBold {
-    color: $textColorDark;
-    font-family: 'Satoshi', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-@mixin headerText {
-    color: $bgHoverLight;
-    font-family: 'Classical Premiera';
-}
+@use './components/navigation/Navbar.scss';
+@use './components/landing-page/Landing.scss';
+@use './components/runner/PromoRunner.scss'; 
+@use './Animations.scss';
+@use './styles/' as s;
 
 .App{
-    background-color: $bgColorLight;
-    padding: 30px;
+    background-color: s.$bgColorLight;
 }
 

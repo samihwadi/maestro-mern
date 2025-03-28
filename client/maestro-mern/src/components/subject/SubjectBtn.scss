@@ -1,0 +1,52 @@
+// @use '../../styles/' as s;
+
+// .subject-button-container{
+//     display: flex;
+//     justify-content: space-between;
+//     background-color: s.$bgBlue;
+//     .subjects {
+//         padding: 50px;
+//         border: solid 0.5px s.$bgCream;
+//     }
+//     p {
+//         @include s.paragraphText;
+//         color: s.$bgColorLight;
+//     }
+// }
+
+@use '../../styles/' as s;
+
+.subject-button-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: s.$bgBlue;
+    .subjects {
+        flex: 1;
+        padding: 50px;
+        border: solid 0.5px s.$bgCream;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-height: 250px; 
+        max-width: 100%;   
+        overflow: hidden; 
+        transition: background-color 0.3s ease;
+        img {
+        height: auto; 
+        object-fit: contain;
+        margin-bottom: 20px;
+        }
+    
+        .bio {
+        margin: 0;
+        }
+    
+        p {
+        @include s.paragraphText;
+        color: s.$bgColorLight;
+        text-align: center;
+        }
+    }
+}

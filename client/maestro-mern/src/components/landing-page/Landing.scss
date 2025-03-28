@@ -1,28 +1,34 @@
-@import '../../App';
+@use '../../styles/' as styles; 
+@use '../../Animations';
 
-.landing-container{
+
+
+.hero-wrapper{
     height: 100vh;
-    padding: 50px 0 80px;
+    padding: 80px 30px 110px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    animation: fadeInText 0.8s forwards;
+    z-index: 2;
     h1 {
-        @include headerText;
+        @include styles.headerText;
         font-size: 75px;
         letter-spacing: 5px;
         text-align: center;
     }
     h3 {
-        @include paragraphBold;
+        @include styles.paragraphBold;
         font-size: 20px;
         margin: 15px 0 25px;
     }
     .text-intro{
         justify-self: center;
-        @include paragraphText;
+        @include styles.paragraphText;
         font-size: 18px;
         width: 600px;
         line-height: 30px;
+
     }
     img {
         width: 400px;
@@ -34,6 +40,7 @@
         align-self: flex-end;
     }
     .hero-text-wrapper{
+        z-index: 10;
         width: 1000px;
         top: 45%;
         left: 50%;
@@ -47,10 +54,10 @@
             font-size: 18px;
             padding: 14px 10px;
             border-radius: 30px;
-            border: solid $textColorDark;
+            border: solid styles.$textColorDark;
             &:hover {
-                color: $bgColorLight;
-                background-color: $textColorDark;
+                color: styles.$bgColorLight;
+                background-color: styles.$textColorDark;
                 cursor: pointer;
             }
         }
