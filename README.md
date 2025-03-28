@@ -26,7 +26,6 @@
 - Node.js
 - Express.js
 - MongoDB (via Mongoose)
-- EmailJS (for contact/form communication)
 
 **Database:**
 - MongoDB Atlas
