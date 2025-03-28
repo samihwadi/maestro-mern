@@ -2,6 +2,7 @@ import PricingRunner from '../pricing/PricingRunner';
 import PromoRunner from '../runner/PromoRunner';
 import InfiniteScroll from '../scroller/InfiniteScroll';
 import SubjectBtn from '../subject/SubjectBtn';
+import Walkthrough from '../walkthrough/Walkthrough';
 import './Landing.scss'
 import { useNavigate } from 'react-router-dom';
 
@@ -24,6 +25,7 @@ const Landing = () => {
       </div>
       <PromoRunner />
       <SubjectBtn />
+      <Walkthrough />
       <InfiniteScroll />
       <PricingRunner />
     </div>

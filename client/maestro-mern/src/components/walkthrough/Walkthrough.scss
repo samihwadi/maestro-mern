@@ -1,0 +1,80 @@
+@use '../../styles/' as s;
+
+.walkthrough-container {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    .img-wrapper {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5em;
+        h2 {
+            @include s.headerText;
+            color: s.$textColorDark;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        .text-runner {
+            @include s.paragraphText;
+            font-size: 16px;
+            margin-bottom: 55px;
+        }
+        .icon-card-container {
+            display: flex;
+            justify-content: space-around;
+            .walkthrough-card {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 20%;
+                p {
+                    @include s.paragraphText;
+                    font-size: 12px;
+                }
+                .icon-list {
+                    width: 22px; 
+                    height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: s.$bgColorLight;
+                    background-color: s.$textColorDark;
+                    flex-shrink: 0;
+                }
+                img {
+                    margin: 25px 0;
+                }
+                h3 {
+                    @include s.paragraphText;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        button {
+            @include s.styleButton(s.$textColorDark, s.$bgColorLight);
+            width: 50%;
+            display: flex;
+            margin-top: 50px;
+            align-self: center;
+            justify-content: space-between;
+            padding: 18px;
+            font-size: 20px;
+            img {
+                width: 30px;
+                height: auto;
+                object-fit: contain;
+                display: block;
+            }
+        }
+    }
+}

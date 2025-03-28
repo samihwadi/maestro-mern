@@ -26,7 +26,6 @@
 }
 
 @mixin styleButton($bColor, $color) {
-  align-self: flex-start;
   background-color: transparent;
   font-size: 14px;
   padding: 14px 10px;

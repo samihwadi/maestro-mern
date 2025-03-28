@@ -35,7 +35,8 @@
             }
         }
         button {
-            @include styles.styleButton(styles.$bgHoverLight, styles.$bgColorLight)
+            @include styles.styleButton(styles.$bgHoverLight, styles.$bgColorLight);
+            align-self: flex-start;
         }
         .dropdown-menu {
             position: relative;
