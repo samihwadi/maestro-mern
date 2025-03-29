@@ -8,6 +8,7 @@ footer {
     align-items: center;
     background-color: s.$bgColorDark;
     .runner-design{
+        border-top: solid 5px s.$bgColorDark;
         background-image: url('/runner-design-2.png');
         background-size: cover;         
         background-position: center;    

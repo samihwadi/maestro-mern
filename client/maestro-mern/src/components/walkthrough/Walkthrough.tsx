@@ -23,7 +23,7 @@ const Walkthrough = () => {
     const [isHovered, setIsHovered] = useState(false);
   return (
     <div className='walkthrough-container'>
-        <div className="img-wrapper"><img src="/walkthrough.jpeg" alt="" /></div>
+        <div className="img-wrapper"><img src="/walkthrough.jpeg" alt="Confused Student" /></div>
         <div className="text-wrapper">
             <h2>How to book a tutor</h2>
             <p className="text-runner">There is no “one size fits all” in education. However, finding a tutor has never been easier and we at <strong>Maestro</strong> are here to help.</p>

@@ -1,3 +1,4 @@
+import Pitch from '../pitch/Pitch';
 import PricingRunner from '../pricing/PricingRunner';
 import PromoRunner from '../runner/PromoRunner';
 import InfiniteScroll from '../scroller/InfiniteScroll';
@@ -28,6 +29,7 @@ const Landing = () => {
       <Walkthrough />
       <InfiniteScroll />
       <PricingRunner />
+      <Pitch />
     </div>
   )
 }
