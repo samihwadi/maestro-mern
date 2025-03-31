@@ -17,7 +17,7 @@ const InfiniteScroll = () => {
   return (
     <div className="scroll-container">
         <div className="scroll-text">
-            <h2>Our tutors are hand picked from top colleges and universities</h2>
+            <h2>Our tutors are hand-picked from top colleges and universities</h2>
         </div>
         <div className="scroller">
             <div className="logo-track">

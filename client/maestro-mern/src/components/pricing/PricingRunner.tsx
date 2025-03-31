@@ -10,7 +10,7 @@ const PricingRunner = () => {
         <div className="runner-text">
             <h3>Maestro’s competitive pricing ensures that you always get top-quality tutoring without breaking the bank. We offer both online and in-person tutoring</h3>
             <button onClick={handleSubmit}>View price calculator <img src="/arrow-right-light.png" alt="Right Arrow Icon" /></button>
-            <p>*View an estimated price | Subjected to change according to tutor rates*</p>
+            <p>*View an estimated price | Subject to change according to tutor rates*</p>
         </div>
         <div className="runner-img">
             <img src="/calculator-hero.png" alt="Greek statue of man thinking"/>
