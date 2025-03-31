@@ -1,0 +1,53 @@
+@use '../../styles/' as s;
+
+.services-container {
+    
+}
+.services-article {
+    height: 80vh;
+    display: flex;
+    padding: 80px;
+    justify-content: space-evenly;
+    .services-text-wrapper {
+        width: 50%;
+        h1 {
+            @include s.headerText;
+            font-size: 55px;
+        }
+        p, h3 {
+            @include s.paragraphText;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            margin: 50px 0px 20px;
+        }
+        p {
+            margin-bottom: 50px;
+            a {
+                font-weight: 600;
+                color: s.$bgHoverLight;
+            }
+        }
+        button {
+            @include s.styleButton(s.$textColorDark, s.$bgColorLight);
+            width: 50%;
+            display: flex;
+            margin-top: 50px;
+            align-self: center;
+            justify-content: space-between;
+            padding: 18px;
+            font-size: 20px;
+            img {
+                width: 30px;
+                height: auto;
+                object-fit: contain;
+                display: block;
+            }
+        }
+    }
+    .services-img-wrapper img {
+        max-width: 450px;
+        height: auto;
+    }
+}

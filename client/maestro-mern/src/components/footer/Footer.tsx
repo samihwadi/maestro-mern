@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="runner-design"></div>
         <div className="footer-content-wrapper">
             <h1>FOR LEARNERS WHO WANTS RESULTS, FAST</h1>
-            <button onClick={handleSubmit}>Book an appointment <img src="/arrow-right-light.png" alt="Right Arrow Icon" /></button>
+            <button onClick={handleSubmit}>Book a lesson <img src="/arrow-right-light.png" alt="Right Arrow Icon" /></button>
             <div className="links-container">
                 <ul>
                     <li><strong>Subjects</strong></li>

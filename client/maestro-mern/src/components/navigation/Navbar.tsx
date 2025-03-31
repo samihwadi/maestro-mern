@@ -71,7 +71,7 @@ const Navbar = () => {
         <NavLink to="/careers" className={({ isActive }) => (isActive ? 'active' : '')}>Careers</NavLink>
         <NavLink to="/about-us" className={({ isActive }) => (isActive ? 'active' : '')}>About Us</NavLink>
         <NavLink to="/contact-us" className={({ isActive }) => (isActive ? 'active' : '')}>Contact Us</NavLink>
-        <button onClick={handleSubmit}>Book an appointment</button>
+        <button onClick={handleSubmit}>Book a lesson</button>
       </div>
     </div>
   );

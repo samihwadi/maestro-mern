@@ -52,9 +52,6 @@
             margin-top: 50px;
             width: 50%;
             @include styles.styleButton(styles.$textColorDark, styles.$bgColorLight);
-            img {
-                width: 20px;
-            }
         }
     }
 }

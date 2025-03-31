@@ -37,7 +37,7 @@ const Walkthrough = () => {
                     </div>
                 ))}
             </div>
-            <button onClick={handleSubmit} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >Book an appointment 
+            <button onClick={handleSubmit} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >Book a lesson 
                 <img  
                 src={isHovered ? "/arrow-right-light.png" : "/arrow-right-dark.png"}  
                 alt="Right Arrow Icon" 
