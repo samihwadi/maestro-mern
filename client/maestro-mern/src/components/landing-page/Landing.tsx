@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const Landing = () => {
     const navigate = useNavigate();
     const handleSubmit = () => {
-        navigate('/book-lesson')
+      navigate('/book-lesson')
     }
   return (
     <div className='landing-container'>

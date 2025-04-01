@@ -1,0 +1,42 @@
+@use '../../styles/' as s;
+
+.pricing-page-container {
+    display: flex;
+    flex-direction: column;
+    .pricing-article-wrapper {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 80px 0;
+        width: 80%;
+        .pricing-article {
+            flex: 1;
+            margin-right: 80px;
+            h1 {
+                @include s.headerText;
+                font-size: 55px;
+            } 
+            p {
+                @include s.paragraphText;
+                font-size: 20px;
+                margin: 50px 0;
+            }
+            button {
+                @include s.styleButton(s.$textColorDark, s.$bgColorLight);
+                width: 60%;
+                display: flex;
+                align-self: center;
+                justify-content: space-between;
+                padding: 18px;
+                font-size: 18px;
+                color: s.$textColorDark;
+                img {
+                    width: 30px;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+}

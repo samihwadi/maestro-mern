@@ -17,7 +17,7 @@ const Reviews = () => {
             by: "Bernadette Obasi - Parent of a high schooler",
         },
         {
-            review: "I had such a hard time understanding chemistry until I started with Maestro. They’ve made a big difference and have been super supportive. I’ve stuck with them ever since, and it’s been a great experience",
+            review: "I had such a hard time understanding chemistry until I started with Maestro. They’ve made a big difference and have been super supportive. I’ve stuck with them for a couple months now and it's been great",
             by: "Lily - Grade 11",
         },
         {

@@ -1,0 +1,133 @@
+@use '../../styles/' as s;
+
+.calculator-container {
+    padding: 50px;
+    margin: 60px 0;
+    .calculator-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .calculator-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            h1 {
+                @include s.headerText;
+                color: s.$bgColorDark;
+                margin: 30px 0 10px;
+                font-size: 30px;
+            }
+            p {
+                @include s.paragraphText;
+                font-size: 15px;
+            }
+        }
+        .form-section-wrapper {
+            display: flex;
+            width: 100%;
+            border: solid 0.5px s.$bgBlue;
+            .form-section, .result-section {
+                flex: 1;
+            }
+            .form-section {
+                padding: 55px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .inline-field {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem; 
+                    margin-bottom: 1.5rem;
+                    select {
+                        @include s.paragraphText;
+                        padding: 3px 10px;
+                        font-size: 15px;
+                        border: 1px solid s.$bgBlue;
+                        border-radius: 50px;
+                    }
+                }
+        
+                h3 {
+                    @include s.paragraphText;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+                .button-group {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    margin-bottom: 1em;
+                    button {
+                        padding: 10px 16px;
+                        border: 1px solid s.$bgBlue;
+                        border-radius: 50px;
+                        color: s.$bgBlue;
+                        cursor: pointer;
+
+                        &.active {
+                            background-color: s.$bgBlue;
+                            color: s.$bgColorLight;
+                        }
+                    }
+                }
+            }
+            .result-section {
+                background-color: s.$bgBlue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 50px 0;
+                @include s.paragraphText;
+                color: s.$bgColorLight;
+                h2 {
+                    font-size: 20px;
+                    font-weight: 200;
+                }
+                h1 {
+                    color: s.$bgCream;
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin: 8px 0;
+                }
+                .runner {
+                    font-size: 12px;
+                    margin-bottom: 50px;
+                }
+                h3 {
+                    font-size: 15px;
+                    margin: 8px 0 28px;
+                }
+                .button-container {
+                    width: 60%;
+                    border-top: solid 1px s.$bgColorLight;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2 {
+                        margin: 28px 0 15px;
+                    }
+                    button {
+                        @include s.styleButton(s.$bgColorLight, s.$bgBlue);
+                        width: 100%;
+                        display: flex;
+                        align-self: center;
+                        justify-content: space-between;
+                        padding: 18px;
+                        font-size: 20px;
+                        color: s.$bgColorLight;
+                        img {
+                            width: 30px;
+                            height: auto;
+                            object-fit: contain;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

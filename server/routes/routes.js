@@ -1,12 +1,9 @@
 import express from 'express'
 const router = express.Router()
 import cors from 'cors'
+import { calculatePrice } from '../controllers/calculator.js'
 
-// Middleware
-router.use(cors({
-    origin: process.env.CLIENT_URL
-}))
-// router.get('/profile', )
+router.post('/calculator', calculatePrice)
 
 
 export default router
