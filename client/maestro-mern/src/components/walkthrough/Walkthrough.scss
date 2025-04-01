@@ -4,12 +4,14 @@
     display: flex;
     width: 100%;
     min-height: 500px;
+    border: solid 0.5px s.$bgColorDark;
     .img-wrapper {
         img {
-            width: 100%;
-            height: auto;
+            height: 100%;
+            width: auto;
+            object-fit: contain;
         }
-    }
+    }    
     .text-wrapper {
         display: flex;
         flex-direction: column;

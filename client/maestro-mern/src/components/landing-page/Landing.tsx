@@ -1,5 +1,6 @@
 import Pitch from '../pitch/Pitch';
 import PricingRunner from '../pricing/PricingRunner';
+import Reviews from '../reviews/Reviews';
 import PromoRunner from '../runner/PromoRunner';
 import InfiniteScroll from '../scroller/InfiniteScroll';
 import SubjectBtn from '../subject/SubjectBtn';
@@ -29,6 +30,7 @@ const Landing = () => {
       <Walkthrough />
       <InfiniteScroll />
       <PricingRunner />
+      <Reviews />
       <Pitch />
     </div>
   )
