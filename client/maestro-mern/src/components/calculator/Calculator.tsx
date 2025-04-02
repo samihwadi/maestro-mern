@@ -11,9 +11,9 @@ const subjectsList = ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
 const Calculator = () => {
     const [type, setType] = useState<TutorType>('');
     const [grade, setGrade] = useState<Grade>('9');
-    const [selectedSubjects, setSelectedSubjects] = useState<string[]>(['Mathematics']);
+    const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
     const [lessonsPerWeek, setLessonsPerWeek] = useState<number>(2);
-    const [duration, setDuration] = useState<number>(1.5);
+    const [duration, setDuration] = useState<number>(2);
     const [hourlyRate, setHourlyRate] = useState<string>('');
     const [weeklyRate, setWeeklyRate] = useState<string>('');
     const [isHovered, setIsHovered] = useState(false);

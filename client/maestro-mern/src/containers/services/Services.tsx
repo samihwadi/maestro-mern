@@ -7,6 +7,7 @@ import PricingRunner from "../../components/pricing/PricingRunner";
 import InfiniteScroll from "../../components/scroller/InfiniteScroll";
 import Pitch from "../../components/pitch/Pitch";
 import Expandable from "../../components/expandable/Expandable";
+import MethodCards from "../../components/methods/MethodCards";
 const Services = () => {
     const navigate = useNavigate();
     const handleSubmit = () => {
@@ -34,6 +35,7 @@ const Services = () => {
             </div>
         </div>
         <PromoRunner />
+        <MethodCards />
         <Expandable />
         <Walkthrough />
         <PricingRunner />
