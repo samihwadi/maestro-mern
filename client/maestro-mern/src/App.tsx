@@ -7,6 +7,7 @@ import Services from './containers/services/Services'
 import PricingPage from './containers/pricing/PricingPage'
 import axios from 'axios'
 import ScrollToTop from './components/ScrollToTop'
+import AboutUs from './containers/about-us/AboutUs'
 
 axios.defaults.baseURL = 'http://localhost:4000/api'
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route path='/' element={<Landing />}></Route>
             <Route path='/services' element={<Services />}></Route>
             <Route path='/pricing' element={<PricingPage />}></Route>
+            <Route path='/about-us' element={<AboutUs />}></Route>
           </Routes>
           <Footer />
         </Router>

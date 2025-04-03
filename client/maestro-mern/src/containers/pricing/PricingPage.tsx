@@ -17,7 +17,7 @@ const PricingPage = () => {
         <div className="pricing-article-wrapper">
             <div className="pricing-article">
                 <h1>Quality tutoring that fits your budget</h1>
-                <p>Maestro’s competitive pricing ensures that you always get top-quality tutoring without breaking the bank. </p>
+                <p>Maestro’s competitive pricing ensures that you always get top-quality tutoring without breaking the bank </p>
                 <button onClick={handleSubmit} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >Book a lesson 
                     <img  
                     src={isHovered ? "/arrow-right-light.png" : "/arrow-right-dark.png"}  

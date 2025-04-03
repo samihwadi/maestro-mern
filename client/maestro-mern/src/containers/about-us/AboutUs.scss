@@ -1,0 +1,113 @@
+@use '../../styles/' as s;
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    .about-article-wrapper {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 80px 0;
+        width: 80%;
+        .about-article {
+            flex: 1;
+            margin-right: 80px;
+            h1 {
+                @include s.headerText;
+                font-size: 55px;
+            } 
+            p {
+                @include s.paragraphText;
+                font-size: 20px;
+                margin: 50px 0;
+            }
+            button {
+                @include s.styleButton(s.$textColorDark, s.$bgColorLight);
+                width: 60%;
+                display: flex;
+                align-self: center;
+                justify-content: space-between;
+                padding: 18px;
+                font-size: 18px;
+                color: s.$textColorDark;
+                img {
+                    width: 30px;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+    .mission-wrapper {
+        display: flex;
+        max-height: 600px;
+        padding: 80px 0;
+        justify-content: start;
+        .mission-img-wrapper {
+            width: 40%;
+            img {
+                height: 100%;
+                width: auto;
+                object-fit: contain;
+            }
+        }  
+        .mission-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50%;
+            h3 {
+                @include s.headerText;
+                font-size: 40px;
+                color: s.$bgColorDark;
+            } 
+            p {
+                @include s.paragraphText;
+                font-size: 16px;
+            }
+            button {
+                @include s.styleButton(s.$textColorDark, s.$bgColorLight);
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                padding: 18px;
+                font-size: 18px;
+                color: s.$textColorDark;
+                img {
+                    width: 30px;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+    .subject-component-wrapper {
+        background-color: s.$bgBlue;
+        display: flex;
+        flex-direction: column;
+        .subject-component-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            padding: 80px 0;
+            width: 70%;
+            gap: 15px;
+            h2 {
+                @include s.headerText;
+                color: s.$bgCream;
+                font-size: 30px;
+            }
+            p {
+                @include s.paragraphText;
+                font-size: 15px;
+                color: s.$bgColorLight;
+                text-align: center;
+            }
+        }
+
+    }
+}
