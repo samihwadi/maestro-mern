@@ -3,21 +3,23 @@
 .walkthrough-container {
     display: flex;
     width: 100%;
-    min-height: 500px;
-    border: solid 0.5px s.$bgColorDark;
+    max-height: 600px;
     .img-wrapper {
+        width: 40%;
         img {
             height: 100%;
-            width: auto;
+            width: 100%;
             object-fit: contain;
         }
     }    
     .text-wrapper {
         display: flex;
+        width: 60%;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 5em;
+        padding: 30px;
+
         h2 {
             @include s.headerText;
             color: s.$textColorDark;
@@ -30,6 +32,7 @@
             margin-bottom: 55px;
         }
         .icon-card-container {
+            width: 100%;
             display: flex;
             justify-content: space-around;
             .walkthrough-card {
@@ -37,7 +40,9 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-between;
                 width: 20%;
+                gap: 25px;
                 p {
                     @include s.paragraphText;
                     font-size: 12px;
@@ -54,7 +59,8 @@
                     flex-shrink: 0;
                 }
                 img {
-                    margin: 25px 0;
+                    max-width: 80px;
+                    height: auto;
                 }
                 h3 {
                     @include s.paragraphText;
@@ -81,3 +87,4 @@
         }
     }
 }
+

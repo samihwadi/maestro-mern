@@ -10,6 +10,7 @@
         h1 {
             @include s.headerText;
             font-size: 55px;
+            line-height: 120%;
         }
         p, h3 {
             @include s.paragraphText;
