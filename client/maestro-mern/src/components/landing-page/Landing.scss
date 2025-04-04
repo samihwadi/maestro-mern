@@ -39,7 +39,7 @@
     .image-two {
         align-self: flex-end;
     }
-    .hero-text-wrapper{
+    .hero-text-wrapper {
         z-index: 10;
         width: 1000px;
         top: 45%;
@@ -47,11 +47,31 @@
         transform: translate(-50%, -50%);
         position: absolute;
         text-align: center;
+    
         button {
-            font-size: 18px;
-            margin-top: 50px;
-            width: 50%;
             @include styles.styleButton(styles.$textColorDark, styles.$bgColorLight);
+            position: relative; 
+            width: 50%;
+            margin: 50px auto 0;
+            padding: 18px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            
+            img {
+              position: absolute;
+              right: 18px; 
+              width: 30px;
+              height: auto;
+              object-fit: contain;
+              display: block;
+            }
+        }          
+    
+        p {
+            width: 50%;
+            margin: 0 auto; 
         }
-    }
+    }    
 }

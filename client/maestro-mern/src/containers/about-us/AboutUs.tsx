@@ -19,7 +19,7 @@ const AboutUs = () => {
         <div className="about-article-wrapper">
             <div className="about-article">
                 <h1>Our Story</h1>
-                <p>What began as a shared vision between two passionate educators has become a mission to empower learners everywhere. We match dedicated tutors with students ready to grow, dream, and thrive</p>
+                <p>What began as a shared vision between two passionate educators has become a mission to empower learners everywhere. We match dedicated tutors with students ready to grow, dream and thrive</p>
                 <button onClick={handleSubmit} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >Book a lesson 
                     <img  
                     src={isHovered ? "/arrow-right-light.png" : "/arrow-right-dark.png"}  

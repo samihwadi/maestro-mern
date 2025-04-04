@@ -64,7 +64,7 @@
             } 
             p {
                 @include s.paragraphText;
-                font-size: 16px;
+                font-size: 20px;
             }
             button {
                 @include s.styleButton(s.$textColorDark, s.$bgColorLight);

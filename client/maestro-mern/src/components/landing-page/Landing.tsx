@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Pitch from '../pitch/Pitch';
 import PricingRunner from '../pricing/PricingRunner';
 import Reviews from '../reviews/Reviews';
@@ -9,6 +10,7 @@ import './Landing.scss'
 import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
+    const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
     const handleSubmit = () => {
       navigate('/book-lesson')
@@ -22,7 +24,12 @@ const Landing = () => {
             <h1>ELEVATED LEARNING THROUGH MAESTRO</h1>
             <h3>In-home  |  Online Tutoring</h3>
             <p className='text-intro'>Smart learning, made easy! Affordable rates, flexible schedules, and tutors who truly care—we keep learning stress-free and effective. Let's grow together!</p>
-            <button onClick={handleSubmit}>Book a lesson</button>
+            <button onClick={handleSubmit} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >Book a lesson 
+                <img  
+                src={isHovered ? "/arrow-right-light.png" : "/arrow-right-dark.png"}  
+                alt="Right Arrow Icon" 
+                />
+            </button>
         </div>
       </div>
       <PromoRunner />
