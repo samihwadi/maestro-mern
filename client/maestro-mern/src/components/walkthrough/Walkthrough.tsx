@@ -32,8 +32,10 @@ const Walkthrough = () => {
                     <div className="walkthrough-card" key={index}>
                         <p className="icon-list">{index + 1}</p>
                         <img src={instruction.icon_url} alt={`Icon ${index}`} />
-                        <h3>{instruction.caption}</h3>
-                        <p>{instruction.text}</p>
+                        <div className="">
+                            <h3>{instruction.caption}</h3>
+                            <p>{instruction.text}</p>
+                        </div>
                     </div>
                 ))}
             </div>

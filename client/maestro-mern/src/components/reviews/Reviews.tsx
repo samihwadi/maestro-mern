@@ -13,15 +13,15 @@ const Reviews = () => {
             by: "Sabiha Rahman - A proud parent",
         },
         {
-            review: "We’ve had such a positive experience with Maestro. My son really enjoys learning with Ahnaf, and the entire staff has been fantastic. It’s a top tier tutoring service that’s worth every bit",
+            review: "We’ve had such a positive experience with Maestro. My son really enjoys learning with Ahnaf, and the entire staff has been fantastic. Very good tutoring service that’s worth every bit",
             by: "Bernadette Obasi - Parent of a high schooler",
         },
         {
-            review: "I had such a hard time understanding chemistry until I started with Maestro. They’ve made a big difference and have been super supportive. I’ve stuck with them for a couple months now and it's been great",
+            review: "I was having a very hard time with understanding chemistry until I started with Maestro. They’ve made a big difference and have been super supportive. I’ve stuck with them for a couple months now and it's been great",
             by: "Lily - Grade 11",
         },
         {
-            review: "What I love most is the personalized approach. My son’s tutor truly understands how he learns best",
+            review: "My daughter's tutor has been so helpful and her grades have improved a lot. Very impressive service! ",
             by: "Deborra Lee",
         },
     ];

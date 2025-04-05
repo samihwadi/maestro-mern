@@ -3,10 +3,10 @@ import './Expandable.scss';
 
 const Expandable = () => {
   const [expandedSections, setExpandedSections] = useState({
-    tutoring: true,
-    testPrep: true,
-    summer: true,
-    homework: true,
+    tutoring: false,
+    testPrep: false,
+    summer: false,
+    homework: false,
   });
 
   const toggleExpand = (section: keyof typeof expandedSections) => {
@@ -26,24 +26,21 @@ const Expandable = () => {
                     <img className={expandedSections.tutoring ? "expanded" : ""} src="/icons/expandable-icon.png" alt="Expand arrow icon" />
                     Regular Tutoring
                 </button>
-                {expandedSections.tutoring && (
-                    <p>
-                    Stay on track with regular tutoring sessions! Our consistent support helps reinforce key concepts,
-                    improve grades, and build lasting academic skills over time.
-                    </p>
-                )}
+                <p className={expandedSections.tutoring ? 'active' : ''}>
+                  Stay on track with regular tutoring sessions! Our consistent support helps reinforce key concepts,
+                  improve grades, and build lasting academic skills over time.
+                </p>
+
             </div>
             <div className="row-headers">
                 <button onClick={() => toggleExpand('testPrep')}>
                     <img className={expandedSections.testPrep ? "expanded" : ""} src="/icons/expandable-icon.png" alt="Expand arrow icon" />
                     Test/Exam Preparation
                 </button>
-                {expandedSections.testPrep && (
-                    <p>
-                    Prepare with confidence! Our test and exam prep sessions focus on key topics, strategies, and practice
-                    to help you succeed when it matters most.
-                    </p>
-                )}
+                <p className={expandedSections.testPrep ? 'active' : ''}>
+                Prepare with confidence! Our test and exam prep sessions focus on key topics, strategies, and practice
+                to help you succeed when it matters most.
+                </p>
             </div>
         </div>
 
@@ -53,24 +50,20 @@ const Expandable = () => {
                     <img className={expandedSections.summer ? "expanded" : ""} src="/icons/expandable-icon.png" alt="Expand arrow icon" />
                     Summer Courses
                 </button>
-                {expandedSections.summer && (
-                    <p>
-                    Keep learning through the summer with our tutoring support! We offer flexible sessions to help reinforce
-                    skills, catch up on missed work, or get ahead for the next school year.
-                    </p>
-                )}
+                <p className={expandedSections.summer ? 'active' : ''}>
+                Keep learning through the summer with our tutoring support! We offer flexible sessions to help reinforce
+                skills, catch up on missed work, or get ahead for the next school year.
+                </p>
             </div>
             <div className="row-headers">
                 <button onClick={() => toggleExpand('homework')}>
                     <img className={expandedSections.homework ? "expanded" : ""} src="/icons/expandable-icon.png" alt="Expand arrow icon" />
                     Homework Help
                 </button>
-                {expandedSections.homework && (
-                    <p>
-                    Stuck on a problem? Our homework help gives you the support you need to understand tough topics and
-                    complete assignments with confidence.
-                    </p>
-                )}
+                <p className={expandedSections.homework ? 'active' : ''}>
+                Stuck on a problem? Our homework help gives you the support you need to understand tough topics and
+                complete assignments with confidence.
+                </p>
             </div>
         </div>
       </div>

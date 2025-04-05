@@ -33,9 +33,11 @@ const AboutUs = () => {
         <div className="mission-wrapper">
             <div className="mission-img-wrapper"><img src="/mission-hero.png" alt="Illustration of people" /></div>
             <div className="mission-content">
-                <h3>Our Mission</h3>
-                <p>Whether you're a tutor ready to make an impact or a student unlocking new possibilities, Maestro makes the match simple, reliable, and transformative.</p>
-                <p>We are committed to creating learning experiences that are personalized to each student's unique needs and goals.</p>
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>Whether you're a tutor ready to make an impact or a student unlocking new possibilities, Maestro makes the match simple, reliable, and transformative.</p>
+                    <p>We are committed to creating learning experiences that are personalized to each student's unique needs and goals.</p>
+                </div>
                 <button onClick={handleSubmit} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >Book a lesson 
                     <img  
                     src={isHovered ? "/arrow-right-light.png" : "/arrow-right-dark.png"}  

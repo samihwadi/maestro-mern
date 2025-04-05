@@ -17,8 +17,6 @@
         display: flex;
         justify-content: space-between;
         width: 60%;
-        min-height: 300px; 
-        max-height: 300px; 
         margin-top: 50px;
     }
     .column-one, .column-two {
@@ -26,8 +24,13 @@
         flex-direction: column;
         justify-content: space-between;
         width: 40%;
-        .expanded {
+        img {
+            transform: rotate(0deg); 
+            transition: transform 0.3s ease-in-out;
+        }
+        img.expanded {
             transform: rotate(90deg);
+            transition: transform 0.3s ease-in-out;
         }
         button {
             text-align: left;
@@ -53,9 +56,28 @@
             color: s.$bgColorLight;
             font-size: 16px;
             margin-top: 11px;
-        }
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding: 0;
+            transform: scaleY(0.95);
+            transition:
+                max-height 0.4s ease-in-out,
+                opacity 0.3s ease-in-out,
+                padding 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+            &.active {
+              max-height: 100px; 
+              opacity: 1;
+              padding: 10px 0;
+              transform: scaleY(1);
+            }
+          }
+          
+          
+          
         .row-headers {
-            height: 40%;
+            margin-bottom: 30px;
         }
     }
 }
