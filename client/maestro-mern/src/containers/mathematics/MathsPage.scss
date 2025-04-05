@@ -1,0 +1,39 @@
+@use '../../styles/' as s;
+
+.math-article-container {
+    display: flex;
+    padding: 80px 50px;
+    justify-content: space-around;
+    .math-article {
+        width: 45%;
+        h1 {
+            @include s.headerText;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            @include s.paragraphBold;
+            font-size: 18px;
+            font-weight: 800;
+        }
+        p {
+            @include s.paragraphText;
+            margin: 50px 0;
+        }
+        button {
+            @include s.styleButton(s.$textColorDark, s.$bgColorLight);
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            padding: 18px;
+            font-size: 18px;
+            color: s.$textColorDark;
+            img {
+                width: 30px;
+                height: auto;
+                object-fit: contain;
+                display: block;
+            }
+        }
+    }
+}
